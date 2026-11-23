@@ -5,3 +5,7 @@ Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
 
 Sequence records retrieved from GenBank remain subject to their original terms
 of use and are not relicensed here.
+
+The AlphaFold 3 model files in model/ are NOT covered by this licence. They are
+AlphaFold Server output, distributed under the AlphaFold Server terms of use reproduced
+in model/AlphaFold_Server_terms_of_use.md, which permit non-commercial use only.

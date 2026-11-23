@@ -19,6 +19,7 @@ not new to this study.
 ```
 scripts/     analyses that produce the results
 figures/     standalone scripts for the figures drawn directly from derived tables
+model/       the predicted JAV E1/E2 heterodimer, with its confidence data
 data/
   alignments/   input alignments and sequence sets
   trees/        maximum likelihood trees with support values
@@ -80,6 +81,16 @@ the paper; they are not duplicated here.
 | `e2_variability_windowed.csv` | per-residue effective number of amino acids across the E2 ectodomain | Figure 5 |
 | `receptor_contact_distances.csv` | per-residue minimum heavy-atom distance from JAV to each reference receptor | Figure 6 |
 | `sequon_conservation_sfc.csv` | sequon counts per species at the four E2 sites and E1 N141 | Table 1 |
+
+The superposition distances in `receptor_contact_distances.csv` were computed from the
+model in `model/` against PDB 6JO8 and 9RBQ; that step is not scripted here.
+
+## The structural model
+
+`model/` holds the AlphaFold 3 heterodimer underlying the structural analyses, together
+with its confidence data and the job request that produced it, described in
+`model/README.md`. These files are AlphaFold Server output and carry their own terms of
+use; they are not covered by the licence that applies to `data/`.
 
 ## External tools
 
