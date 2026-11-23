@@ -1,0 +1,5 @@
+Feature,Match_state,Sequences_spanning_site,With_an_insertion,JAV
+E2 domain A insertion (JAV 117-119; E-V-G/V-G-E),after 116,2247,0,3-residue insertion
+E2 domain B insertion (JAV A206),after 202,2247,0,1-residue insertion
+E2 domain A loop (JAV 108-132 equivalent),108-129,2247,"2,246 of 2,247 are exactly 22 aa (one partial CHIKV is 21 aa with an internal gap)",25 aa
+E1 (whole domain),1-438,2090,0,no insertion

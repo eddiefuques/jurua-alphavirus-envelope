@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper below."
+title: "jurua-alphavirus-envelope: analysis code and data"
+authors:
+  - family-names: Fuques
+    given-names: Eddie
+    affiliation: "Ecology, Evolution, and Marine Biology Department, University of California, Santa Barbara, Santa Barbara, CA, USA"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Genomic and structural characterization of a novel Amazonian alphavirus reveals lineage-specific changes in both envelope glycoproteins"
+  authors:
+    - family-names: Fuques
+      given-names: Eddie
+      affiliation: "Ecology, Evolution, and Marine Biology Department, University of California, Santa Barbara, Santa Barbara, CA, USA"
+    - family-names: Massey
+      given-names: Aimee L.
+      affiliation: "School of Marine and Environmental Affairs, University of Washington, Seattle, WA, USA"
+    - family-names: Levi
+      given-names: Taal
+      affiliation: "Department of Fisheries, Wildlife, and Conservation Sciences, Oregon State University, Corvallis, OR, USA"
+    - family-names: Trubl
+      given-names: Gareth
+      affiliation: "Lawrence Livermore National Laboratory, Livermore, CA, USA"
+    - family-names: Vega Thurber
+      given-names: Rebecca L.
+      affiliation: "Ecology, Evolution, and Marine Biology Department, University of California, Santa Barbara, Santa Barbara, CA, USA"
+  year: 2026
+  notes: "Manuscript submitted."
