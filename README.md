@@ -22,7 +22,7 @@ figures/     standalone scripts for the figures drawn directly from derived tabl
 data/
   alignments/   input alignments and sequence sets
   trees/        maximum likelihood trees with support values
-  tables/       derived tables, including the supplementary tables
+  tables/       derived tables consumed and produced by the scripts
   scan/         profile HMMs and extracted domain sets for the conservation scan
 ```
 
@@ -44,7 +44,7 @@ on PATH, and writes its intermediate files to `work/`.
 | script | what it does |
 |---|---|
 | `scripts/fetch_sp_dataset.py` | rebuilds the 35-taxon structural polyprotein set from GenBank using the accessions in `data/tables` |
-| `scripts/fetch_sfc.py` | retrieves and deduplicates the Semliki Forest complex E1 and E2 sequences used for the conservation scans |
+| `scripts/fetch_sfc.py` | retrieves the Semliki Forest complex protein records used for the conservation scans, one FASTA per species |
 | `scripts/e2_e1_branch_regression.py` | fits E1 and E2 as edge-unlinked partitions on the 35-taxon topology, scans all 67 branches as externally studentized residuals from a leave-one-out fit, and bootstraps the JAV residual |
 | `scripts/e2_entropy.py` | per-column Shannon entropy across the E2 ectodomain, reported as effective number of amino acids over a nine-residue window |
 | `scripts/sequon_scan.py` | scores the four JAV E2 sequons and the E1 domain I sequon against every unique complex E2 and E1 sequence, in HMM match-state coordinates |

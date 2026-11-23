@@ -69,9 +69,7 @@ def build(path, figsize, nrows, ncols, sizes, pl_size, lw=1.0, ms=(26, 34), bs=1
                va="top", fontsize=ann, color="0.3")
     ax[0].margins(0.07)
 
-    # (b) leave-one-out studentized residuals, ranked; identity by key, not by
-    #     labels on the points - the two significant branches sit at the right
-    #     edge where inline labels collide with the title and threshold text
+    # (b) leave-one-out studentized residuals, ranked; branches identified by the key
     col = [JAVC if n == "Jurua_alphavirus" else (ALT if n == "Barmah_Forest_virus" else OTHC)
            for n in S.taxa]
     ax[1].axhspan(-tcrit, tcrit, color="0.92", lw=0, zorder=0)
@@ -89,9 +87,7 @@ def build(path, figsize, nrows, ncols, sizes, pl_size, lw=1.0, ms=(26, 34), bs=1
     ax[1].set_ylabel("Studentized residual")
     ax[1].set_title("Genus-wide outlier scan", fontsize=base); ax[1].margins(0.07)
 
-    # (c) bootstrap distribution. The numbers (0.21, CI, 198/200) live in the
-    #     caption; only the IDENTITY of the red line stays in the panel, so a
-    #     reader never has to leave the figure to learn what a mark is.
+    # (c) bootstrap distribution of the JAV residual, with the 95% CI shaded
     ax[2].axvspan(lo95, hi95, color=JAVC, alpha=.12, lw=0, zorder=0)
     ax[2].hist(BT.resid, bins=22, color=HIST, ec="white", lw=.5, zorder=2)
     ax[2].axvline(OBS, color=JAVC, lw=lw * 1.4, zorder=4)
