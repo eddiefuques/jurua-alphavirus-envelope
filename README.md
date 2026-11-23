@@ -55,22 +55,15 @@ on PATH, and writes its intermediate files to `work/`.
 This repository contains the analysis code written specifically for this study: the steps
 that are not fully specified by the Methods and therefore cannot be reconstructed from the
 published description alone. Standard steps run with established tools under stated
-parameters, such as alignment with MAFFT, trimming with ClipKIT, tree inference with
-IQ-TREE, recombination screening, and alignment rendering with ESPript, are documented in
-the Methods and are not reproduced here as code. What is included are the custom analyses
-whose implementation details affect the result, together with the inputs they consume and
-the derived tables they produce.
+parameters, such as alignment with MAFFT, tree inference with IQ-TREE, recombination
+screening, and alignment rendering with ESPript, are documented in the Methods and are not
+reproduced here as code. What is included are the custom analyses whose implementation
+details affect the result, together with the inputs they consume and the derived tables
+they produce.
 
 `figures/` covers the figures drawn directly from those derived tables: Figure 2, Figure 5
 and Figure 6. Figures built by arranging alignment renderings and structural views produced
 by the tools named in the Methods are not scripted here.
-
-`e2_e1_branch_regression.py` is the analysis most worth reading. It replaced an earlier
-test that used pairwise distances, which are not independent observations when they come
-from a shared phylogeny. Branch lengths on a fixed topology are independent model
-parameters, which is what makes the residual scan a legitimate test. The script carries
-comments on three implementation details that are easy to get wrong, including the need
-for `-Q` rather than `-p` in IQ-TREE so that E1 and E2 are not forced to be proportional.
 
 ## Data files and what they correspond to
 
